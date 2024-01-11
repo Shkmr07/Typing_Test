@@ -70,6 +70,21 @@ def main():
     print(colored("2. Show Leaderboard","yellow"))
     print(colored("3. Exit","yellow"))
     choices = int(input("Enter your choices (1/2/3): "))
-    
+    while choices != 3:
+        if choices == 1:
+            username = input("Enter the username: ")
+            print()
+            ans = sentence_generator()
+            typing_test(ans,username)
+
+        elif choices == 2:
+            print()
+            Leaderboard()
+
+        print()
+        print(colored("1. Start Typing Test","yellow"))
+        print(colored("2. Show Leaderboard","yellow"))
+        print(colored("3. Exit","yellow"))
+        choices = int(input("Enter your choices (1/2/3): "))
         
 main()
