@@ -3,7 +3,21 @@ import random
 import msvcrt
 import time
 
+# Here, I intiallze one empty dictionary
 leaderboard = {}
+
+def Leaderboard():
+    # This function is showing ranking with their Name and WPM 
+    if leaderboard:
+        print("Here is a Leaderboard ->")
+        sorted_leaderboard = sorted(leaderboard.items(), key=lambda item: (-item[1], item[0]))
+        rank = 0
+        last_wpm = None
+        for name, wpm in sorted_leaderboard:
+            if wpm != last_wpm:
+                rank += 1
+            print(str(rank) + ".", name, ":", round(wpm), "WPM")
+            last_wpm = wpm
 
 def sentence_generator():
     # This functions is to generate random sentences through random library
