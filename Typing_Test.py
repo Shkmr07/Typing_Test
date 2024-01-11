@@ -64,12 +64,15 @@ def typing_test(test_string,username):
     print("Your typing speed is", round(wpm), "words per minute.")
 
 def main():
-
+    # This are the instructions the user can see in terminal 
     print(colored("########## Typing Test ##########","blue"))
     print(colored("1. Start Typing Test","yellow"))
     print(colored("2. Show Leaderboard","yellow"))
     print(colored("3. Exit","yellow"))
+    # Here i take user choice what it want
     choices = int(input("Enter your choices (1/2/3): "))
+
+    # this while loop runs until user not press 3
     while choices != 3:
         if choices == 1:
             username = input("Enter the username: ")
