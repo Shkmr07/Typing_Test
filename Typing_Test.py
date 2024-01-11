@@ -62,3 +62,14 @@ def typing_test(test_string,username):
     print("Number of words typed: ", word_count)
     print("Time taken for the test: ", round(elapsed_time, 2), "seconds.")
     print("Your typing speed is", round(wpm), "words per minute.")
+
+def main():
+
+    print(colored("########## Typing Test ##########","blue"))
+    print(colored("1. Start Typing Test","yellow"))
+    print(colored("2. Show Leaderboard","yellow"))
+    print(colored("3. Exit","yellow"))
+    choices = int(input("Enter your choices (1/2/3): "))
+    
+        
+main()
