@@ -18,6 +18,10 @@ def Leaderboard():
                 rank += 1
             print(str(rank) + ".", name, ":", round(wpm), "WPM")
             last_wpm = wpm
+    
+    else: 
+        print("No users have completed the typing test yet. The leaderboard is empty.")
+
 
 def sentence_generator():
     # This functions is to generate random sentences through random library
